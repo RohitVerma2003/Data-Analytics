@@ -1,0 +1,10 @@
+select * from Employees where department = 'IT' and salary > 75000;
+select * from Employees where department = 'HR' or salary < 60000;
+select * from Employees where department != 'Finance';
+select * from Employees where department = 'Finance' and salary > 60000 and salary < 70000;
+select * from EMployees where department = 'IT' and salary <= 80000;
+select * from Employees where (department = 'HR' or department = 'Finance') and salary > 65000;
+select * from Employees where department != 'HR' and lastname like 'D%';
+select * from Employees where department != 'IT' and salary > 70000;
+select * from Employees where department = 'IT' and (salary > 75000 or firstname like 'Laura');
+select * from Employees where department != 'HR' or department != 'IT';

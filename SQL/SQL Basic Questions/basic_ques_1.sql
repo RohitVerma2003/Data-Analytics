@@ -1,0 +1,10 @@
+select * from Employees;
+select firstname , lastname from Employees;
+select * from Employees where department = 'IT';
+select * from Employees where salary > 70000;
+select * from Employees order by lastname;
+select distinct department from Employees;
+select department , count(*) as count from Employees group by department;
+select max(salary) from Employees;
+select avg(salary) from Employees where department = 'Finance';
+select * from Employees where lastname like 'M%';
